@@ -1,3 +1,5 @@
+// seed.js
+
 const RedditImg = require('./models/reddit-img');
 const seedData = require('./seedData.json');
 

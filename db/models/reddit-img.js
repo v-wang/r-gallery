@@ -1,3 +1,5 @@
+// reddit-img.js
+
 const mongoose = require('../connection');
 
 const RedditImgSchema = new mongoose.Schema(
