@@ -3,7 +3,9 @@ const ImgRouter = express.Router();
 const RedditImg = require('../db/models/reddit-img');
 
 ImgRouter.get('/', (req, res) => {
-  res.send('pass');
+  RedditImg.find({}, (err, data) => {
+    res.send(data);
+  });
 });
 
 module.exports = ImgRouter;
